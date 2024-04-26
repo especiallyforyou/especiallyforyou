@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <h1 id="head">Kömür</h1>
+        <h3>Kimlik: 122448</h3>
+        <tr>
+            <th>Aşı</th>
+            <td>
+                <ul>
+                    <li class="check">Kuduz</li>
+                    <li class="cross">DHPP</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Mama</th>
+            <td class="check">Yedi</td>
+        </tr>
+        <tr>
+            <th>Yaş</th>
+            <td>6 (altı)</td>
+        </tr>
+        <tr>
+            <th>Kısır</th>
+            <td class="check">Maalesef</td>
+        </tr>
+        <tr>
+            <th>Cinsiyet</th>
+            <td class="cross">Dişi</td>
+        </tr>
+    </table> 
+</body>
+<script>
+    setInterval(() => {
+        let header = document.getElementById('head');
+
+        if (window.location.href.includes('komur')) {
+            document.title = 'Kömür'
+            header.innerText = 'Kömür'
+        } else if (window.location.href.includes('comar')) {
+            document.title = 'Çomar'
+            header.innerText = 'Çomar'
+        }
+    })
+</script>
+</html>

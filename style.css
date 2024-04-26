@@ -1,0 +1,49 @@
+* {
+    font-family: 'Chivo';
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1, h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+table {
+    background-color: hsl(210, 14%, 75%);
+    border-radius: 20px;
+    padding: 20px;
+    width: calc(100vw - 40px);
+    max-width: 800px;
+}
+
+th {
+    padding-right: 10px;
+    text-align: start;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {}
+
+.cross:before {
+    content: '✘';
+    font-weight: 400;
+    color: red;
+    margin-right: 10px;
+}
+
+.check:before {
+    content: '✓';
+    font-weight: 900;
+    color: green;
+    margin-right: 10px;
+}
