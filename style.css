@@ -15,7 +15,7 @@ h1, h3 {
 }
 
 table {
-    background-color: hsl(210, 14%, 75%);
+    background-color: hsl(210, 14%, 85%);
     border-radius: 20px;
     padding: 20px;
     width: calc(100vw - 40px);
