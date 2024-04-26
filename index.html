@@ -11,33 +11,6 @@
 </head>
 <body>
     <table id="tablo">
-        <h1>Kömür</h1>
-        <h3>Kimlik: 122448</h3>
-        <tr>
-            <th>Aşı</th>
-            <td>
-                <ul>
-                    <li class="check">Kuduz</li>
-                    <li class="cross">DHPP</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th>Mama</th>
-            <td class="check">Yedi</td>
-        </tr>
-        <tr>
-            <th>Yaş</th>
-            <td>6 (altı)</td>
-        </tr>
-        <tr>
-            <th>Kısır</th>
-            <td class="check">Maalesef</td>
-        </tr>
-        <tr>
-            <th>Cinsiyet</th>
-            <td class="cross">Dişi</td>
-        </tr>
     </table> 
 </body>
 <script>
@@ -46,7 +19,7 @@
 
         if (window.location.href.includes('komur')) {
             document.title = 'Kömür'
-            tablo.innerText = ```
+            tablo.innerHTML = ```
         <h1 id="head">Kömür</h1>
         <h3>Kimlik: 122448</h3>
         <tr>
@@ -77,7 +50,7 @@
             ```
         } else if (window.location.href.includes('comar')) {
             document.title = 'Çomar'
-            tablo.innerText = ```
+            tablo.innerHTML = ```
         <h1 id="head">Çomar</h1>
         <h3>Kimlik: 516830</h3>
         <tr>
