@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table>
-        <h1 id="head">Kömür</h1>
+    <table id="tablo">
+        <h1>Kömür</h1>
         <h3>Kimlik: 122448</h3>
         <tr>
             <th>Aşı</th>
@@ -42,14 +42,70 @@
 </body>
 <script>
     setInterval(() => {
-        let header = document.getElementById('head');
+        let tablo = document.getElementById('tablo');
 
         if (window.location.href.includes('komur')) {
             document.title = 'Kömür'
-            header.innerText = 'Kömür'
+            tablo.innerText = ```
+        <h1 id="head">Kömür</h1>
+        <h3>Kimlik: 122448</h3>
+        <tr>
+            <th>Aşı</th>
+            <td>
+                <ul>
+                    <li class="check">Kuduz</li>
+                    <li class="cross">DHPP</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Mama</th>
+            <td class="check">Yedi</td>
+        </tr>
+        <tr>
+            <th>Yaş</th>
+            <td>6 (altı)</td>
+        </tr>
+        <tr>
+            <th>Kısır</th>
+            <td class="check">Maalesef</td>
+        </tr>
+        <tr>
+            <th>Cinsiyet</th>
+            <td>Dişi</td>
+        </tr>
+            ```
         } else if (window.location.href.includes('comar')) {
             document.title = 'Çomar'
-            header.innerText = 'Çomar'
+            tablo.innerText = ```
+        <h1 id="head">Çomar</h1>
+        <h3>Kimlik: 516830</h3>
+        <tr>
+            <th>Aşı</th>
+            <td>
+                <ul>
+                    <li class="check">Kuduz</li>
+                    <li class="check">DHPP</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Mama</th>
+            <td class="cross">Yemedi</td>
+        </tr>
+        <tr>
+            <th>Yaş</th>
+            <td>6 (altı)</td>
+        </tr>
+        <tr>
+            <th>Kısır</th>
+            <td class="cross">Çok şükür</td>
+        </tr>
+        <tr>
+            <th>Cinsiyet</th>
+            <td>Erkek</td>
+        </tr>
+            ```
         }
     })
 </script>
